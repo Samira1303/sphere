@@ -1,0 +1,400 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.heightbox {
+    min-height: 80px;
+    background-color: rgb(11, 11, 45);
+
+    .font {
+        font-size: 20px;
+        background-color: yellow;
+        min-height: 80px;
+        color: black;
+    }
+    .font span {
+        font-size: 26px;
+        color: black;
+    }
+
+    .align ul {
+        display: flex;
+        height: 80px;
+        // background-color: aqua;
+        align-items: center;
+        justify-content: center;
+        li a {
+            color: white;
+            font-size: 12px;
+        }
+        .yellow a {
+            color: yellow;
+        }
+    }
+}
+
+.quality {
+    background-image: url(../assets/const.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_textbox {
+        display: flex;
+        justify-content: center;
+        // background-color: aqua;
+        align-items: center;
+
+        &_size h1 {
+            font-size: 57px;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+.services {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &_txtbox {
+        height: 120px;
+        // background-color: yellow;
+        text-align: center;
+        &_size h1 {
+            font-size: 44px;
+            color: rgb(11, 11, 45);
+        }
+    }
+    &_box {
+        // background-color: aqua;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        &_onebox {
+            &_imgbox img {
+                width: 80%;
+            }
+
+            &_textbox {
+                width: 70%;
+            }
+        }
+
+        &_twobox {
+            &_imgbox img {
+                width: 80%;
+            }
+
+            &_textbox {
+                width: 70%;
+            }
+        }
+
+        &_threebox {
+            &_imgbox img {
+                width: 80%;
+            }
+
+            &_textbox {
+                width: 70%;
+            }
+        }
+    }
+}
+
+.about {
+    height: 500px;
+    // background-color: aqua;
+
+    &_textminibox {
+        min-height: 100px;
+        // background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &_size h1 {
+            min-height: 80px;
+            // background-color: darkcyan;
+            font-size: 54px;
+            color: rgb(10, 10, 54);
+        }
+
+        &_font {
+            min-height: 200px;
+            // background-color: pink;
+            width: 70%;
+            font-size: 16px;
+            color: rgb(91, 83, 83);
+        }
+    }
+    &_imgbox {
+        background-image: url(../assets/const.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 50%;
+        background-color: pink;
+    }
+}
+
+.year {
+    // height: 500px;
+    // background-color: aquamarine;
+    &_box {
+        min-height: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: yellow;
+        text-align: center;
+
+        &_minibox h1,
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+.projects {
+    min-height: 800px;
+    // background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &_textbox {
+        min-height: 150px;
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_size h1 {
+            font-size: 53px;
+            color: rgb(13, 13, 74);
+        }
+    }
+
+    &_photobox {
+        // background-color: rgb(181, 52, 74);
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+
+        &_minibox {
+            min-height: 500px;
+            margin-left: -15px;
+            // background-color: aqua;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 5px;
+
+            &_oneimgbox {
+                background-image: url(../assets/const.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 300px;
+            }
+
+            &_twoimgbox {
+                background-image: url(../assets/manage.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 300px;
+            }
+
+            &_threeimgbox {
+                background-image: url(../assets/model.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 300px;
+            }
+
+            &_fourimgbox {
+                background-image: url(../assets/plan.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 300px;
+            }
+        }
+    }
+}
+
+.contact {
+    min-height: 700px;
+    // background-color: aqua;
+
+    &_box {
+        &_txtbox {
+            &_size h4 {
+                font-size: 16px;
+                color: gray;
+            }
+
+            &_font h1 {
+                font-size: 29px;
+                height: 70px;
+                // background-color: red;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    &_flexbox {
+        &_twominibox {
+            &_size h2 {
+                height: 200px;
+                // background-color: pink;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .heightbox {
+        min-height: 80px;
+        
+        // background-color: green;
+        width: 100%;
+        .font {
+            font-size: 15px;
+        }
+
+        .font span {
+            font-size: 20px;
+            color: black;
+        }
+
+        .align ul {
+            display: flex;
+            height: 200px;
+            // background-color: aqua;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            // home about ortaya getirmek
+            // menu ortaya getirmek
+        }
+
+        .fontsize {
+            display: flex;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            // width: 30px;
+            // background-color: red;
+        }
+    }
+
+    .quality {
+        height: 600px;
+        &_textbox {
+            height: 100px;
+            // background-color: aqua;
+            &_size h1 {
+                font-size: 27px;
+            }
+        }
+    }
+
+    .services {
+        &_box {
+            &_onebox,
+            &_twobox,
+            &_threebox {
+                &_imgbox img {
+                    width: 100%;
+                }
+                &_textbox {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .about {
+        &_textminibox {
+            &_size h1 {
+                font-size: 38px;
+            }
+            &_font {
+                width: 90%;
+                font-size: 16px;
+            }
+        }
+        &_imgbox {
+            width: 100%;
+            height: 300px;
+            background-color: pink;
+            float: left;
+        }
+    }
+
+    .year {
+        // height: 600px;
+        &_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+    }
+
+    .projects {
+        &_textbox {
+            min-height: 100px;
+            // background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            &_size h1 {
+                font-size: 43px;
+            }
+        }
+
+        &_photobox {
+            &_minibox {
+                display: flex;
+                flex-wrap: wrap;
+                min-height: 400px;
+                // background-color: aqua;
+                &_oneimgbox {
+                    width: 100%;
+                    height: 500px;
+                    // background-color: red;
+                }
+
+                &_twoimgbox {
+                    width: 100%;
+                    height: 500px;
+                }
+
+                &_threeimgbox {
+                    width: 100%;
+                    height: 500px;
+                }
+
+                &_fourimgbox {
+                    width: 100%;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
